@@ -1,0 +1,8 @@
+//Font family
+$Rubik: "Josefin Sans", sans-serif;
+
+$NavBar__height: 45px;
+$SideMenu__Width: 215px;
+
+$Content__height: calc(100vh - #{$NavBar__height});
+$Content__width: calc(100vh - #{$SideMenu__Width});
