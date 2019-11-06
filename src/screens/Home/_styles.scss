@@ -1,0 +1,14 @@
+.ContainerCategorie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.CardCategorie {
+  height: 345px;
+  margin: 5px;
+}
+
+.imgCategorie {
+  min-height: 230px;
+  background-color: grey;
+}

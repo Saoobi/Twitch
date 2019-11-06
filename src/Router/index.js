@@ -17,16 +17,18 @@ function Router() {
     <BrowserRouter>
       <NavBar />
       <SideMenu />
-      <Suspense fallback={<div></div>}>
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/directory" component={AllGames} />
-          <Route path="/directory/game/:gameId" component={LiveStreams} />
-          <Route path="/:userId" component={LiveStream} />
-          <Route path="/:userId/videos" component={Videos} />
-          <Route path="/videos/:videoId" component={Video} />
-        </Switch>
-      </Suspense>
+      <div className="ScreenContainer">
+        <Suspense fallback={<div></div>}>
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/directory" component={AllGames} />
+            <Route path="/directory/game/:gameId" component={LiveStreams} />
+            <Route path="/:userId" component={LiveStream} />
+            <Route path="/:userId/videos" component={Videos} />
+            <Route path="/videos/:videoId" component={Video} />
+          </Switch>
+        </Suspense>
+      </div>
     </BrowserRouter>
   );
 }
